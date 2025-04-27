@@ -1,6 +1,12 @@
 
 "homepage": "https://johnmichael06.github.io/bmi-calculator"
 
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
+
+
 {
   "name": "my-react-app",
   "private": true,
