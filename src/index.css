@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+  background: linear-gradient(to right, #003135, #024950);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  color: white;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.inputField {
+  padding: 0.8rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #0FA4AF;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  font-size: 1rem;
+  color: white; /* Actual input text color */
+}
+
+.inputField::placeholder {
+  color: #AFDDE5; /* Brighter soft blue placeholder */
+  opacity: 1; /* Fully visible */
+}
